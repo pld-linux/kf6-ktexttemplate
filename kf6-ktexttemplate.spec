@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.22
+%define		kdeframever	6.23
 %define		qtver		5.15.2
 %define		kfname		ktexttemplate
 
 Summary:	Text template
 Name:		kf6-%{kfname}
-Version:	6.22.0
-Release:	2
+Version:	6.23.0
+Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	2e11155c490e765419a917d2db649fe6
+# Source0-md5:	14ffa33ff0a440bbb97f329b738f4d92
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Qml-devel >= %{qtver}
