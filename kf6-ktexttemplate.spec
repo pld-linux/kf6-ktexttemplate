@@ -31,7 +31,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		qt6dir		%{_libdir}/qt6
 
 %description
-KTextTemplate.
+KTextTemplate is to make it easier for application developers to
+separate the structure of documents from the data they contain.
+
+%description -l pl.UTF-8
+KTextTemplate jest pomyślana po to, żeby uprościć programistom
+oddzielenie struktury dokumentu od danych, które on zawiera.
 
 %package devel
 Summary:	Header files for %{kfname} development
