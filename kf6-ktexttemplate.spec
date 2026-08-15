@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.28
+%define		kdeframever	6.29
 %define		qtver		5.15.2
 %define		kfname		ktexttemplate
 
 Summary:	Text template
 Name:		kf6-%{kfname}
-Version:	6.28.0
+Version:	6.29.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	2a1c9e1c2bc997d08629c1c7b4803cff
+# Source0-md5:	f382cd12656952d85178985ae92be71b
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Qml-devel >= %{qtver}
@@ -87,7 +87,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt6/plugins/kf6/ktexttemplate/ktexttemplate_defaulttags.so
 %{_libdir}/qt6/plugins/kf6/ktexttemplate/ktexttemplate_i18ntags.so
 %{_libdir}/qt6/plugins/kf6/ktexttemplate/ktexttemplate_loadertags.so
+%{_libdir}/qt6/plugins/kf6/ktexttemplate/ktexttemplate_scriptabletags.so
 %{_datadir}/qlogging-categories6/ktexttemplate.categories
+
 
 %files devel
 %defattr(644,root,root,755)
